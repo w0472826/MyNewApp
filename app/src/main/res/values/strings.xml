@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">MyNewApp</string>
+    <string name="welcome_message">Hello! My First Android App.</string>
+
+    <string-array name="provinces">
+        <item>NF</item>
+        <item>PE</item>
+        <item>NB</item>
+        <item>NS</item>
+        <item>QC</item>
+        <item>ON</item>
+    </string-array>
+
 </resources>
