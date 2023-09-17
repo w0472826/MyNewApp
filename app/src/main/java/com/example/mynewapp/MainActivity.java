@@ -10,7 +10,6 @@ import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.Toast;
-
 import com.example.mynewapp.databinding.ActivityMainBinding;
 
 import java.util.Arrays;
@@ -59,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
             imgView.setId(i + 1);
             imgView.setPadding(0,0,0,5);
 
-            linearLayout.addView(imgView);
+            linearLayoutHorizontal.addView(imgView);
         }
 
         // Get the string array
@@ -72,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
                 Log.i("TESTING", "ButtonSubmitClicked");
                 Log.i("TESTING", "Name: " + binding.editTextFirstName.getText().toString());
 
-                String message = "Welcome " +  binding.editTextFirstName.getText().toString() + binding.editTextLastName.getText().toString();
+                String message = "Welcome " +  binding.editTextFirstName.getText().toString() + " " + binding.editTextLastName.getText().toString();
                 Toast.makeText(MainActivity.this, message, Toast.LENGTH_LONG).show();
             }
         });

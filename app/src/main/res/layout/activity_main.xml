@@ -14,7 +14,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.533" />
 
     <Button
         android:id="@+id/buttonSubmit"
@@ -56,13 +57,15 @@
         app:layout_constraintTop_toBottomOf="@+id/editTextFirstName" />
 
     <ScrollView
+        android:id="@+id/scrollView2"
         android:layout_width="133dp"
         android:layout_height="282dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toTopOf="@+id/txtWelcomeMessage"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.216">
 
         <LinearLayout
             android:id="@+id/linearLayout"
@@ -87,5 +90,15 @@
             android:layout_height="match_parent"
             android:orientation="horizontal" />
     </HorizontalScrollView>
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:entries="@array/provinces"
+        app:layout_constraintBottom_toTopOf="@+id/txtWelcomeMessage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
